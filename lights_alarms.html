@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<style>
+		.dashboard-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.dashboard {
+			width: 80%; /* Increased width to 80% */
+			height: 80vh; /* Set height to 80% of viewport height */
+			margin: 20px;
+			background-color: #f7f7f7;
+			border: 1px solid #ddd;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			overflow: hidden; /* Add this to prevent iframe from overflowing */
+		}
+
+		.dashboard h2 {
+			margin-top: 0;
+		}
+
+		.lights {
+			background-color: #ffffcc; /* Optional: add a different background color for the Lights dashboard */
+		}
+
+		.alarms {
+			background-color: #ffcccc; /* Optional: add a different background color for the Alarms dashboard */
+		}
+
+		/* Add this to make the iframe full height */
+		.dashboard iframe {
+			height: 100%;
+			width: 100%;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- Dashboard Container -->
+	<div class="dashboard-container">
+		<!-- Dashboard 1: Lights -->
+		<div class="dashboard lights">
+			<h2>Lights</h2>
+			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/_kK8bmKn0EIRmNd4fZUG_x3QeOkWvLk7S55nLZLWdxM?nonavbar=true"></iframe>
+		</div>
+
+		<!-- Dashboard 2: Alarms -->
+		<div class="dashboard alarms">
+			<h2>Alarms</h2>
+			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/64J1_kfb7Ono7vQ1-d5TuB-tHEGE3cvp-t3QU1FDGR4?nonavbar=true"></iframe>
+		</div>
+	</div>
+</body>
+</html>
