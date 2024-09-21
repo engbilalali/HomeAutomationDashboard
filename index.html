@@ -10,12 +10,12 @@
 		}
 
 		.dashboard {
-			width: 80%; /* Increased width to 80% */
-			height: 80vh; /* Set height to 80% of viewport height */
-			margin: 20px;
+			width: 95%; /* Increased width to 80% */
+			height: 103vh; /* Set height to 80% of viewport height */
+			margin: 5px;
 			background-color: #f7f7f7;
 			border: 1px solid #ddd;
-			padding: 20px;
+			padding: 5px;
 			border-radius: 10px;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 			overflow: hidden; /* Add this to prevent iframe from overflowing */
@@ -30,8 +30,12 @@
 		}
 
 		.alarms {
-			background-color: #ffcccc; /* Optional: add a different background color for the Alarms dashboard */
+			background-color: #15e638; /* Optional: add a different background color for the Alarms dashboard */
 		}
+
+		.temperature {
+			background-color: #e63e0b; /* Optional: add a different background color for the Alarms dashboard */
+		}		
 
 		/* Add this to make the iframe full height */
 		.dashboard iframe {
@@ -47,14 +51,20 @@
 		<!-- Dashboard 1: Lights -->
 		<div class="dashboard lights">
 			<h2>Lights</h2>
-			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/_kK8bmKn0EIRmNd4fZUG_x3QeOkWvLk7S55nLZLWdxM?nonavbar=true"></iframe>
+			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/UerROHTtsBvVclvbDbY9LRsYXG304pjeqVJcn0FHPok?nonavbar=true"></iframe>
 		</div>
 
 		<!-- Dashboard 2: Alarms -->
 		<div class="dashboard alarms">
 			<h2>Alarms</h2>
-			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/64J1_kfb7Ono7vQ1-d5TuB-tHEGE3cvp-t3QU1FDGR4?nonavbar=true"></iframe>
+			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/OlQaavUBRP_SZfa3rXcbN3NFRJd9qyW7DQfzvHQDVrA?nonavbar=true"></iframe>
 		</div>
+		<!-- Dashboard 3: Temperature -->
+		<div class="dashboard temperature">
+			<h2>Temperature</h2>
+			<iframe width="100%" height="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/dashboard/6RxivKfv_jVWT_bgXfoEr2A-bTO1xQLJuu4Pw7omkTY?nonavbar=true"></iframe>
+		</div>
+		
 	</div>
 </body>
 </html>
